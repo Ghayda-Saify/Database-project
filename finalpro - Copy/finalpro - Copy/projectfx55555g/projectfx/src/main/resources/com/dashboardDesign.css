@@ -1,0 +1,313 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/*
+    Created on : Oct 28, 2024, 3:52:32 PM
+    Author     : GIGABYTE
+*/
+
+.chart-bar {
+    -fx-bar-fill: #e75967; /* Customize bar color */
+}
+.chart-bar-legend-item-symbol {
+    -fx-background-color: #d97861; /* Customize legend color */
+}
+
+.default-color0.chart-pie { /* Color for first pie slice */
+    -fx-pie-color: #a389bc;
+}
+.default-color1.chart-pie { /* Color for second pie slice */
+    -fx-pie-color: #c17a86;
+}
+.default-color2.chart-pie { /* Color for third pie slice */
+    -fx-pie-color: #edab50;
+}
+.default-color3.chart-pie { /* Color for fourth pie slice */
+    -fx-pie-color: #cfe466;
+}
+
+/* Base ToggleButton styling to look like a switch */
+.toggle-button {
+    -fx-background-color: white; /* Slightly darker pink when unselected */
+    -fx-text-fill: #50275A;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 5 20;
+    -fx-border-color: #50275A;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+    -fx-transition: background-color 0.3s ease;
+}
+
+/* Selected (On) state */
+.toggle-button:selected {
+    -fx-background-color: #50275A; /* Main color */
+    -fx-text-fill: white; /* Light text */
+}
+.toggle-button:selected {
+    -fx-background-color: white; /* Main color */
+    -fx-text-fill: #50275A; /* Light text */
+}
+/* Pressed (Active Click) State */
+/*.toggle-button:pressed {*/
+/*    -fx-background-color: #B388B3; !* Slightly darker when pressed *!*/
+/*}*/
+
+/* Style the ComboBox with ID 'searchby' text field */
+ComboBox .text-field {
+    -fx-background-color: #633376; /* Purple background */
+    -fx-text-fill: white;          /* White text color */
+    -fx-font-size: 14px;
+}
+
+/* Style the ComboBox arrow button for 'searchby' */
+ComboBox .arrow-button {
+    -fx-background-color: #633376; /* Match arrow button background */
+}
+
+ComboBox .arrow {
+    -fx-background-color: white;   /* White arrow icon */
+}
+
+/* Style dropdown list items in 'searchby' */
+ComboBox .combo-box-popup .list-view .list-cell {
+    -fx-background-color: #633376; /* Background color for each item */
+    -fx-text-fill: white;          /* White text color */
+}
+
+/* Highlight color when an item is selected or hovered */
+ComboBox .combo-box-popup .list-view .list-cell:filled:selected,
+ComboBox .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #50275a; /* Darker shade when selected or hovered */
+    -fx-text-fill: white;          /* Ensures text remains white on selection */
+}
+
+.top-form{
+    -fx-background-color:  #502478;
+    -fx-border-color:#000;
+    -fx-border-width: .4px .4px .2px .2px;
+
+}
+
+.semi-top-form{
+    -fx-background-color:  #f4c2c2;
+    -fx-border-color:#000;
+    -fx-border-width: .4px .4px .2px .2px;
+}
+
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+    -fx-text-fill: #f4c2c2;
+}
+
+.close:hover{
+    -fx-background-color:#ff8181;
+    -fx-text-fill: #2c1a3c;
+}
+
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.minimize:hover{
+    -fx-background-color: #5c3c79;
+}
+
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom, rgba(61, 1, 73, 0.86), rgba(93, 42, 126, 0.86));
+}
+
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#f4c2c2;
+    -fx-text-size: 15px;
+    -fx-text-family: "Arial";
+    -fx-alignment:CENTER;
+    -fx-background-radius: 20;
+}
+.nav-btn:hover{
+    -fx-background-color:#f4c2c2;
+    -fx-text-fill:#633376;
+    -fx-text-size: 15px;
+    -fx-text-family: "Arial";
+    -fx-alignment:CENTER;
+    -fx-border-radius: 20;
+}
+
+.logout{
+    -fx-background-color:#6e408a;
+    -fx-background-radius:10px;
+    -fx-text-family: "Arial";
+    -fx-text-fill:#f4c2c2;
+    -fx-cursor: hand;
+}
+.logout:hover{
+    -fx-background-color:#f4c2c2;
+    -fx-text-fill:#633376;
+    -fx-text-family: "Arial";
+
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.3),6,0,0,0);
+}
+
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius:8px;
+
+
+}
+
+.card{
+    -fx-background-color:linear-gradient(to left,rgba(221, 199, 224, 0.5)
+    ,rgba(221, 199, 224, 0.5));
+    -fx-background-radius:12px;
+}
+.login{
+    -fx-background-radius:10px;
+    -fx-background-color:#f4c2c2;
+}
+
+.login:hover{
+    -fx-background-color:#633376;
+    -fx-text-fill:#f4c2c2;
+    -fx-text-family: "Arial";
+}
+
+.search{
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom left,#dfacb6,#612f74);
+    -fx-border-width:4px;
+    -fx-border-radius:10px;
+    -fx-font-family: "Tahoma";
+    -fx-font-size:14px;
+    -fx-padding:0px 0px 0px 28px;
+}
+
+.search:focused{
+    -fx-border-width:1.8px;
+}
+
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0px;
+    -fx-border-color:linear-gradient(to bottom left,#dfacb6,#612f74);
+    -fx-border-width:5px;
+    -fx-border-radius:8px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom left, #dfacb6, #612f74);
+    -fx-background-radius: 7px 7px 0 0;
+    -fx-border-radius: 7px 7px 0 0;
+    -fx-background-insets: 0;
+}
+
+.table-view .column-header .filter{
+    -fx-background-color:transparent;
+    -fx-size:100px;
+}
+.table-view .table-column {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-text-family: "Arial";
+}
+
+.textfield{
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-border-color:linear-gradient(to bottom left,#dfacb6,#612f74);
+    -fx-border-width:2px;
+    -fx-font-family: "Tahoma";
+}
+
+.textfield:focused{
+    -fx-background-color: transparent;
+    -fx-border-width:2px;
+
+}
+.choosefolder{
+    -fx-background-color:linear-gradient(to bottom left,#dfacb6,#612f74);
+    -fx-background-radius: 7px;
+    -fx-cursor: hand;
+    -fx-text-fill:#fff;
+    -fx-font-fill:#f4c2c2;
+    -fx-font-size:14px;
+    -fx-font-family: "Arial" ;
+}
+.add-btn{
+    -fx-background-color:#633376;
+    -fx-background-radius: 7px;
+    -fx-cursor: hand;
+    -fx-text-fill:#fff;
+    -fx-font-fill:#f4c2c2;
+    -fx-font-size:14px;
+    -fx-font-family: "Arial" ;
+}
+.combo-box .list-cell {
+    -fx-text-fill: #fff;
+}
+.add-btn:hover{
+    -fx-background-color:#9256a9;
+}
+
+.my-label {
+    -fx-text-fill: linear-gradient(to left,#dfacb6,#612f74); /* Change this to your desired color */
+}
+
+/* Styles for the Radio Button */
+.radio-button {
+    -fx-font-family: "Arial";
+    -fx-background-color:0;
+    -fx-text-fill: #50275A;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+}
+
+/* Unselected Radio Button Circle */
+.radio-button .radio {
+    -fx-background-color: #fff;
+    -fx-border-color: #50275A;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+    -fx-padding: 5px;
+}
+
+/* Selected Radio Button Circle */
+.radio-button:selected .radio {
+    -fx-background-color: #50275A;
+}
+
+chart-bar {
+    -fx-bar-fill: #e75967; /* Customize bar color */
+}
+.chart-bar-legend-item-symbol {
+    -fx-background-color: #d97861; /* Customize legend color */
+}
+
+.default-color0.chart-pie { /*/ Color for first pie slice */
+    -fx-pie-color: #a389bc;
+}
+.default-color1.chart-pie { /* Color for second pie slice */
+    -fx-pie-color: #c17a86;
+}
+.default-color2.chart-pie { /* Color for third pie slice */
+    -fx-pie-color: #edab50;
+}
+.default-color3.chart-pie { /* Color for fourth pie slice */
+    -fx-pie-color: #cfe466;
+}
+
+/* Hover effect */
+/*.radio-button:hover {*/
+/*    -fx-background-color: #f0b1b1;*/
+/*}*/
+

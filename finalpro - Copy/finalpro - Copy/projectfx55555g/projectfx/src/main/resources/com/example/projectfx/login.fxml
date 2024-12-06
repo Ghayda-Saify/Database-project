@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="781.0" style="-fx-background-color: linear-gradient(to bottom, #3D0149, #5D2A7E); -fx-border-color: #f4c2c2; -fx-border-width: 0;" stylesheets="@../../dashboardDesign.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.LoginController">
+    <right>
+        <AnchorPane fx:id="RightPane" prefHeight="566.0" prefWidth="382.0" style="-fx-background-color: linear-gradient(to bottom, #3D0149, #5D2A7E);" stylesheets="@../../dashboardDesign.css">
+            <children>
+                <TextField fx:id="userNametxt" layoutX="92.0" layoutY="198.0" maxWidth="228.0" onAction="#loginBtnOnAction" prefHeight="40.0" prefWidth="230.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #f4c2c2; -fx-border-width: 0px 0px 2px 0px; -fx-background-size: MAX WIDTH; -fx-border-radius: 3; -fx-text-fill: #f4c2c2;" stylesheets="@../../../../java/com/example/loginstyle.css">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TextField>
+                <PasswordField fx:id="passtxt" layoutX="92.0" layoutY="252.0" maxWidth="230.0" onAction="#loginBtnOnAction" prefHeight="40.0" prefWidth="230.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #f4c2c2; -fx-border-width: 0px 0px 2px 0px; -fx-border-radius: 3; -fx-text-fill: #f4c2c2;">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="loginbtn" layoutX="131.0" layoutY="341.0" mnemonicParsing="false" onAction="#loginBtnOnAction" prefHeight="37.0" prefWidth="150.0" style="-fx-background-radius: 10;" styleClass="login" stylesheets="@../../dashboardDesign.css" text="Login" textFill="#2c1a3c">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Text fx:id="USER_LOGIN" fill="#f4c2c2" layoutX="74.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="50.0" />
+                    </font>
+                </Text>
+                <Text fx:id="happyToHaveYou" fill="#f4c2c2" layoutX="91.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We're happy to have you back.">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Label fx:id="loginfaild" alignment="CENTER" layoutX="90.0" layoutY="305.0" prefHeight="36.0" prefWidth="232.0" textFill="#e10a0a">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <!-- <Label fx:id="loginfaild" alignment="CENTER" layoutX="90.0" layoutY="305.0" prefHeight="36.0" prefWidth="232.0" textFill="#e10a0a">
+                   <font>
+                      <Font size="17.0" />
+                   </font>
+                </Label> -->
+                <Label fx:id="loginSucc" alignment="CENTER" layoutX="90.0" layoutY="305.0" prefHeight="36.0" prefWidth="232.0" textFill="#33e00b">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="64.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@user (4).png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@padlock (1).png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="108.0" fitWidth="128.0" layoutX="152.0" layoutY="415.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@QR.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </AnchorPane>
+    </right>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+    <center>
+        <ImageView fx:id="ImageViewAndalus" fitHeight="598.0" fitWidth="407.0" nodeOrientation="INHERIT" opacity="0.79" pickOnBounds="true" preserveRatio="true" style="-fx-smooth: true; -fx-cursor: hand;" BorderPane.alignment="CENTER">
+            <image>
+                <Image url="@andalus.jpg" />
+            </image>
+        </ImageView>
+    </center>
+</BorderPane>

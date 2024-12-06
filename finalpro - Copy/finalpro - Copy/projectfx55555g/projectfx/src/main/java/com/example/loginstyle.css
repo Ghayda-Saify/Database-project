@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.login{
+    -fx-background-radius:10px;
+    -fx-background-color:#f4c2c2;
+}
+
+.login:hover{
+    -fx-background-color:#633376;
+    -fx-text-fill:#f4c2c2;
+    -fx-text-family: "Arial";
+}/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 29, 2024, 12:31:39 AM
+    Author     : ASUS
+*/
+

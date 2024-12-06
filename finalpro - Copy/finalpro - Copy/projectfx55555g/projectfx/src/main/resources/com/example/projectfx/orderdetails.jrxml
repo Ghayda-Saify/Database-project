@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_5" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d7bc2ea8-6b2f-4522-953e-a7e7631d89a8">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[select "FK OrderID","FK ProductID","Product"."Product Name","Quantity","Product"."Unit Price",("Quantity" *"Product"."Unit Price") as totalprice
+from "Order details"
+join "Product" on "Order details"."FK ProductID" = "Product"."Product ID"
+order by "FK OrderID"]]>
+	</queryString>
+	<field name="FK OrderID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="FK OrderID"/>
+		<property name="com.jaspersoft.studio.field.label" value="FK OrderID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Order details"/>
+	</field>
+	<field name="FK ProductID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="FK ProductID"/>
+		<property name="com.jaspersoft.studio.field.label" value="FK ProductID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Order details"/>
+	</field>
+	<field name="Product Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Product Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="Product Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Product"/>
+	</field>
+	<field name="Quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="Quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Order details"/>
+	</field>
+	<field name="Unit Price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="Unit Price"/>
+		<property name="com.jaspersoft.studio.field.label" value="Unit Price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Product"/>
+	</field>
+	<field name="totalprice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="totalprice"/>
+		<property name="com.jaspersoft.studio.field.label" value="totalprice"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="0" width="340" height="72" uuid="bf18206a-075f-4e7b-bf6c-69b967cc315e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bauhaus 93" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Orders Details]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="-1" y="20" width="70" height="30" uuid="a3479ea7-0a1b-47ab-9d89-7d3df4a336b1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd63a042-d068-4456-bf49-1895c0de46f0"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<text><![CDATA[FK OrderID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="20" width="70" height="30" uuid="efc78a2f-f558-483b-b921-0ff239aea56d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6c2b4fb5-2e70-4ef8-bc66-6931d3ca06c1"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<text><![CDATA[FK ProductID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="20" width="111" height="30" uuid="17a267c8-f2dc-4d5d-ad30-028bbd5404c8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55f2ac7d-0b7b-4416-a83a-cbfc52699526"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="332" y="20" width="111" height="30" uuid="8d2c4d99-bccf-4c74-91f2-4f4136287157">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f8e4e086-151a-4200-9866-86e0993a147d"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<text><![CDATA[Unit Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="20" width="111" height="30" uuid="6976bd08-29c1-46d0-9ffd-7ac61a116f7d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7dce70bc-d3d0-4596-8184-aa53af9e4f73"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<text><![CDATA[totalprice]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="90" splitType="Stretch">
+			<textField>
+				<reportElement x="-1" y="0" width="92" height="40" uuid="046c1970-6531-4be6-ad24-fb36278a3e7b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bd63a042-d068-4456-bf49-1895c0de46f0"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FK OrderID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="91" y="0" width="92" height="40" uuid="b90983c5-650c-4e9f-bd66-ee9af78f9e7a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6c2b4fb5-2e70-4ef8-bc66-6931d3ca06c1"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FK ProductID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="367" y="0" width="92" height="40" uuid="2ad70b0e-aac0-403a-a789-2d42a62d3451">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55f2ac7d-0b7b-4416-a83a-cbfc52699526"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="92" height="40" uuid="c6f45d37-ad20-419b-8645-6ec30c0622b8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f8e4e086-151a-4200-9866-86e0993a147d"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Unit Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="92" height="40" uuid="ef920dae-5d80-446d-987c-6b515584d031">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7dce70bc-d3d0-4596-8184-aa53af9e4f73"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Medium" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalprice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>

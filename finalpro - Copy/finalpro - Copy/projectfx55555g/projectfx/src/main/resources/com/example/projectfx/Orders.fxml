@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.OrdersController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="692.0" prefWidth="927.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="657.0" prefWidth="205.0" style="-fx-background-color: rgba(202, 171, 206, 0.3);" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="3.0" layoutY="6.0" prefHeight="682.0" prefWidth="200.0" style="-fx-background-radius: 30;" styleClass="nav-form" stylesheets="@../../dashboardDesign.css" AnchorPane.bottomAnchor="6.7999999999999545" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="2.5999999999999943" AnchorPane.topAnchor="6.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="51.0" layoutY="191.0" prefHeight="23.0" prefWidth="98.0" text="Welcome! " textFill="#f4c2c2">
+                                 <font>
+                                    <Font name="Segoe Print" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="65.0" endY="3.0517578125E-5" layoutX="120.0" layoutY="234.0" startX="-100.0" stroke="#f4c2c2" strokeWidth="2.0" />
+                              <Button fx:id="Homebtn" layoutX="10.0" layoutY="251.0" mnemonicParsing="false" onAction="#HomebtnOnAction" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../../dashboardDesign.css" text="Home">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Ordersbtn" layoutX="10.0" layoutY="297.0" mnemonicParsing="false" onAction="#OrdersbtnOnAction" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../../dashboardDesign.css" text="Orders">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Customerbtn" layoutX="10.0" layoutY="342.0" mnemonicParsing="false" onAction="#CustomerbtnOnAction" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../../dashboardDesign.css" text="Customers">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="productbtn" layoutX="10.0" layoutY="386.0" mnemonicParsing="false" onAction="#productbtnOnAction" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../../dashboardDesign.css" text="Products">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Employeebtn" layoutX="10.0" layoutY="432.0" mnemonicParsing="false" onAction="#EmployeebtnOnAction" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../../dashboardDesign.css" text="Employee">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="deliverybtn" layoutX="10.0" layoutY="479.0" mnemonicParsing="false" onAction="#DelivrybtnOnAction" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@../../dashboardDesign.css" text="Delivery">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="signOutbtn" alignment="CENTER" layoutX="64.0" layoutY="648.0" mnemonicParsing="false" onAction="#signOutbtnOnAction" prefHeight="34.0" prefWidth="110.0" style="-fx-background-radius: 30;" styleClass="logout" stylesheets="@../../dashboardDesign.css" text="Sign out" textFill="#f4c2c2">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font></Button>
+                              <Label alignment="CENTER" layoutX="17.0" layoutY="14.0" prefHeight="58.0" prefWidth="172.0" style="-fx-border-color: #f4c2c2; -fx-border-radius: 30;" text="Alandalus Design" textAlignment="CENTER" textFill="#f4c2c2">
+                                 <font>
+                                    <Font name="Andalus" size="21.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="35.0" layoutY="657.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@logout (1).png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="122.0" fitWidth="98.0" layoutX="51.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@manager (1).png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="91.0" fitWidth="103.0" layoutX="56.0" layoutY="539.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@QR.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="206.0" layoutY="228.0" prefHeight="656.8" prefWidth="743.0" style="-fx-background-color: rgba(202, 171, 206, 0.3);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="722.0" prefWidth="974.0" style="-fx-background-color: rgba(255, 255, 255, 0.4);" styleClass="white-bg" stylesheets="@../../dashboardDesign.css">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="14.0" layoutY="509.0" prefHeight="18.0" prefWidth="90.0" text="Order ID" textFill="#2c1a3c" />
+                                    <Label alignment="CENTER" layoutX="14.0" layoutY="559.0" prefHeight="18.0" prefWidth="90.0" text="Order Date" textFill="#2c1a3c" />
+                                    <TextField fx:id="oidtext" layoutX="115.0" layoutY="504.0" onAction="#updateOnAction" styleClass="textfield" stylesheets="@../../dashboardDesign.css" />
+                                    <Label alignment="CENTER" layoutX="14.0" layoutY="610.0" prefHeight="18.0" prefWidth="90.0" text="Required Date" textFill="#2c1a3c" />
+                                    <Label alignment="CENTER" layoutX="14.0" layoutY="658.0" prefHeight="18.0" prefWidth="90.0" text="Devilering Date" textFill="#2c1a3c" />
+                                    <Label alignment="CENTER" layoutX="278.0" layoutY="509.0" prefHeight="18.0" prefWidth="90.0" text="Customer ID" textFill="#2c1a3c" />
+                                    <Label alignment="CENTER" layoutX="278.0" layoutY="559.0" prefHeight="18.0" prefWidth="90.0" text="Employee ID" textFill="#2c1a3c" />
+                                    <Label alignment="CENTER" layoutX="278.0" layoutY="610.0" prefHeight="18.0" prefWidth="90.0" text="Delivery ID" textFill="#2c1a3c" />
+                                    <Label alignment="CENTER" layoutX="278.0" layoutY="658.0" prefHeight="18.0" prefWidth="90.0" text="Status" textFill="#2c1a3c" />
+                                    <DatePicker fx:id="ddtext" layoutX="113.0" layoutY="653.0" prefHeight="21.0" prefWidth="150.0" styleClass="textfield" stylesheets="@../../dashboardDesign.css" />
+                                    <AnchorPane layoutX="570.0" layoutY="494.0" prefHeight="213.0" prefWidth="394.0" style="-fx-background-color: #f1ebf1; -fx-background-radius: 20;" styleClass="shadow" stylesheets="@../../dashboardDesign.css">
+                                       <children>
+                                          <Button fx:id="add" layoutX="228.0" layoutY="32.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="32.0" prefWidth="151.0" styleClass="add-btn" stylesheets="@../../dashboardDesign.css" text="Add" />
+                                          <Button fx:id="update" layoutX="26.0" layoutY="32.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="32.0" prefWidth="152.0" styleClass="add-btn" stylesheets="@../../dashboardDesign.css" text="Update" />
+                                          <Button fx:id="delete" layoutX="227.0" layoutY="105.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="32.0" prefWidth="153.0" styleClass="add-btn" stylesheets="@../../dashboardDesign.css" text="Delete" />
+                                          <Button fx:id="clear" layoutX="26.0" layoutY="105.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="32.0" prefWidth="152.0" styleClass="add-btn" stylesheets="@../../dashboardDesign.css" text="Clear" />
+                                          <Button fx:id="orderdetalis" layoutX="129.0" layoutY="165.0" mnemonicParsing="false" onAction="#OrderDetails" prefHeight="32.0" prefWidth="152.0" styleClass="add-btn" stylesheets="@../../dashboardDesign.css" text="Order Details" />
+                                       </children>
+                                    </AnchorPane>
+                                    <DatePicker fx:id="rdtext" layoutX="114.0" layoutY="605.0" prefHeight="21.0" prefWidth="150.0" styleClass="textfield" stylesheets="@../../dashboardDesign.css" />
+                                    <DatePicker fx:id="odtext" layoutX="113.0" layoutY="554.0" prefHeight="21.0" prefWidth="150.0" styleClass="textfield" stylesheets="@../../dashboardDesign.css" />
+                                    <ToggleButton fx:id="status" layoutX="384.0" layoutY="651.0" mnemonicParsing="false" onAction="#statusOnAction" prefHeight="32.0" prefWidth="147.0" text="Not Done" />
+                                    <ComboBox fx:id="custid" layoutX="377.0" layoutY="504.0" onAction="#customerid" onMouseClicked="#customerid" prefHeight="30.0" prefWidth="162.0" promptText="choose a number" stylesheets="@../../dashboardDesign.css">
+                                       <styleClass>
+                                          <String fx:value="combo-box-popup" />
+                                          <String fx:value="add-btn" />
+                                          <String fx:value="combo-box" />
+                                       </styleClass>
+                                    </ComboBox>
+                                    <ComboBox fx:id="searchby2" layoutX="24.0" layoutY="69.0" onAction="#searchbyOnAction" onMouseClicked="#searchbyOnAction" prefHeight="30.0" prefWidth="138.0" promptText="Search By" stylesheets="@../../dashboardDesign.css">
+                                       <styleClass>
+                                          <String fx:value="add-btn" />
+                                          <String fx:value="combo-box-popup" />
+                                       </styleClass>
+                                    </ComboBox>
+                                    <ComboBox fx:id="empid" layoutX="376.0" layoutY="554.0" onAction="#employeeid" onMouseClicked="#employeeid" prefHeight="30.0" prefWidth="164.0" promptText="choose a number" stylesheets="@../../dashboardDesign.css">
+                                       <styleClass>
+                                          <String fx:value="choosefolder" />
+                                          <String fx:value="combo-box-popup" />
+                                          <String fx:value="add-btn" />
+                                       </styleClass>
+                                    </ComboBox>
+                                    <ComboBox fx:id="delid" layoutX="376.0" layoutY="605.0" onAction="#deliveryid" onMouseClicked="#deliveryid" prefHeight="30.0" prefWidth="164.0" promptText="choose a number" stylesheets="@../../dashboardDesign.css">
+                                       <styleClass>
+                                          <String fx:value="choosefolder" />
+                                          <String fx:value="combo-box-popup" />
+                                          <String fx:value="add-btn" />
+                                       </styleClass>
+                                    </ComboBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="20.0" layoutY="25.0" prefHeight="466.0" prefWidth="954.0" style="-fx-background-color: transparent;" styleClass="white-bg" stylesheets="@../../dashboardDesign.css">
+                                 <children>
+                                    <TextField fx:id="searchbox" layoutX="193.0" layoutY="57.0" onAction="#search" prefHeight="34.0" prefWidth="621.0" promptText="Search" styleClass="search" stylesheets="@../../dashboardDesign.css" />
+                                    <TableView fx:id="Orderstable" editable="true" layoutX="4.0" layoutY="112.0" onMouseClicked="#select" onSort="#select" prefHeight="350.0" prefWidth="946.0" style="-fx-blend-mode: true;" stylesheets="@../../dashboardDesign.css">
+                                      <columns>
+                                        <TableColumn fx:id="checkcol" minWidth="70.0" prefWidth="69.59996223449707" text="Status" />
+                                          <TableColumn fx:id="OrderIdcol" prefWidth="100.0000228881836" text="Order ID" />
+                                          <TableColumn fx:id="OrderDatecol" prefWidth="123.199951171875" text="Order Date" />
+                                          <TableColumn fx:id="CustomerIDcol" prefWidth="139.99996948242188" text="Customer ID" />
+                                          <TableColumn fx:id="EmployeeIDcol" prefWidth="119.20004272460938" text="Employee ID" />
+                                          <TableColumn fx:id="RequiredDatecol" prefWidth="134.39990234375" text="Required Date" />
+                                          <TableColumn fx:id="ShippedDatecol" prefWidth="117.5999755859375" text="Shipped Date" />
+                                          <TableColumn fx:id="DeliveryIDcol" prefWidth="129.60009765625" text="Delivery ID" />
+                                      </columns>
+                                    </TableView>
+                                    <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="201.0" layoutY="65.0" opacity="0.38" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@magnifier (1).png" />
+                                       </image>
+                                    </ImageView>
+                                    <ComboBox fx:id="searchby" layoutX="14.0" layoutY="59.0" onAction="#searchbyOnAction" onMouseClicked="#searchbyOnAction" prefHeight="30.0" prefWidth="138.0" promptText="Search By" stylesheets="@../../dashboardDesign.css">
+                                       <styleClass>
+                                          <String fx:value="add-btn" />
+                                          <String fx:value="combo-box-popup" />
+                                       </styleClass></ComboBox>
+                                    <Label layoutX="36.0" layoutY="1.0" styleClass="my-label" stylesheets="@../../dashboardDesign.css" text="Orders">
+                                       <font>
+                                          <Font name="Arial Bold" size="24.0" />
+                                       </font>
+                                       <textFill>
+                                          <LinearGradient endX="1.0" endY="1.0">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.621052622795105" green="0.37033137679100037" blue="0.37033137679100037" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="0.006729475100942127">
+                                                   <color>
+                                                      <Color red="0.621052622795105" green="0.37033137679100037" blue="0.37033137679100037" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="0.7263157963752747" green="0.43578946590423584" blue="0.43578946590423584" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <RadioButton fx:id="done" layoutX="807.0" layoutY="57.0" mnemonicParsing="false" onAction="#done" text="Unfinished Orders">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                              </AnchorPane>
+                              <Line endX="873.0001220703125" endY="7.62939453125E-6" layoutX="92.0" layoutY="60.0" startX="-60.599998474121094" startY="7.62939453125E-6" strokeWidth="2.0" styleClass="my-line">
+                                 <stroke>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.621052622795105" green="0.37033137679100037" blue="0.37033137679100037" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006729475100942127">
+                                             <color>
+                                                <Color red="0.38823530077934265" green="0.20000000298023224" blue="0.4627451002597809" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.95686274766922" green="0.7607843279838562" blue="0.7607843279838562" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </stroke>
+                              </Line>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
